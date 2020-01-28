@@ -61540,47 +61540,6 @@
         ]
       }
     },
-    "/lol-ranked/v2/tiers": {
-      "get": {
-        "operationId": "GetLolRankedV2Tiers",
-        "parameters": [
-          {
-            "in": "query",
-            "items": {
-              "format": "int64",
-              "type": "integer"
-            },
-            "name": "summonerIds",
-            "required": true,
-            "type": "array"
-          },
-          {
-            "in": "query",
-            "items": {
-              "$ref": "#/definitions/LolRankedLeagueQueueType"
-            },
-            "name": "queueTypes",
-            "required": true,
-            "type": "array"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Successful response",
-            "schema": {
-              "items": {
-                "$ref": "#/definitions/LolRankedParticipantTiers"
-              },
-              "type": "array"
-            }
-          }
-        },
-        "tags": [
-          "Plugins",
-          "Plugin lol-ranked"
-        ]
-      }
-    },
     "/lol-recommendations/v1/recommendations": {
       "get": {
         "operationId": "GetLolRecommendationsV1Recommendations",
